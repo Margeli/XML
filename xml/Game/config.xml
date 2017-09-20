@@ -7,7 +7,7 @@
 	
 	
   	<renderer>		
-		<vsync value="false"/>	
+		<vsync> false</vsync> 	
 		
 	</renderer>
 	
@@ -22,13 +22,13 @@
 	</textures>
 	
 	<window>
-		<fullscreen value="true"/>	
-		<borderless value="false"/>
-		<resizable value="true"/>
-		<fullscreen_window value="false"/>	
-		<width value="1024"/>	
-		<height value="768"/>	
-		<scale value= "1"/>	
+		<fullscreen> 0 </fullscreen>
+		<borderless> 0 </borderless>
+		<resizable> 1 </resizable>
+		<fullscreen_window> 0 </fullscreen_window>
+		<width> 1024 </width> 
+		<height> 768 </height> 
+		<scale> 1 </scale> 
 		
 	</window>
   

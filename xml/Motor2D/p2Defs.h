@@ -54,15 +54,17 @@ template <class VALUE_TYPE> void SWAP(VALUE_TYPE& a, VALUE_TYPE& b)
 // TODO 6: Improve config.xml to store all configuration variables that we have as macros
 // Use a section with the name of each module (see Module::name)
 //bool fs = App->node.child_value("fullscreen");
+#define TITLE "replaceme title"
+/*
 #define FULLSCREEN false
 #define BORDERLESS false
 #define RESIZABLE true
 #define FULLSCREEN_WINDOW false
-#define TITLE "replaceme title"
-//uint width = App->node.child_value("width");
+
+
 #define WIDTH 1024
 #define HEIGHT 768
-#define SCALE 1
+#define SCALE 1*/
 
 // Joins a path and file
 inline const char* const PATH(const char* folder, const char* file)
