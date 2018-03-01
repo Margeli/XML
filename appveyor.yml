@@ -19,7 +19,7 @@ configuration:
 
 build:
 
-  project: upc_videojocs - 2D Engine.sln
+  project: upc_videojocs.sln
 
   verbosity: normal
 
