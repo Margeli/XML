@@ -7,7 +7,7 @@ image:
 build:
   verbosity: normal
 before_package:
-- ps: Copy-Item C:\projects\XML\$env:CONFIGURATION\Motor 2D.exe C:\projects\XML\Game\.
+- ps: Copy-Item C:\projects\XML\$env:CONFIGURATION\Motor2D.exe C:\projects\XML\Game\.
 artifacts:
 - path: Game
   name: Release
