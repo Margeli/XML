@@ -1,4 +1,12 @@
-
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration:
+- Debug
+- Release
+build:
+  verbosity: normal
+before_package:
+- ps: Copy-Item C:\projects\xml\$env:CONFIGURATION\Motor 2D.exe C:\projects\xml\Game\.
 deploy:
 - provider: GitHub
   description: Auto-generated release
@@ -6,16 +14,4 @@ deploy:
     secure: EvCROCHCyi5Cm+1FwVbr1SIMpOV5bJdHMpixBlH6XmwyFd84y34dHiF9nsx7QohQ
   draft: true
   prerelease: false
-version: 1.0.{build}
-configuration:
-- Debug
-- Release
-image:
-- Visual Studio 2017
-build:
-  verbosity: normal
-before_package:
-- ps: Copy-Item C:\projects\XML\$env:CONFIGURATION\Motor2D.exe C:\projects\XML\Game\.
-artifacts:
-- path: Game
-  name: Release
+  
