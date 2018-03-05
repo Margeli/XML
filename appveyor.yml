@@ -2,6 +2,8 @@ version: 1.0.{build}
 configuration:
 - Debug
 - Release
+image:
+- Visual Studio 2017
 build:
   verbosity: normal
 before_package:
