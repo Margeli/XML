@@ -1,59 +1,11 @@
-
-version: v0.4.autorelease-{build}
-image:
-  - Visual Studio 2017
-
-branches:
-
-  only:
-
-  - master
-
-  - development
-
-skip_tags: true
-
+version: 1.0.{build}
 configuration:
-
 - Debug
-
 - Release
-
 build:
-
-  project: upc_videojocs.sln
-
   verbosity: normal
-
-
-
+before_package:
+- ps: Copy-Item C:\projects\xml\$env:CONFIGURATION\Motor 2D.exe C:\projects\xml\Game\.
 artifacts:
-
 - path: Game
-
-  name: game_files
-
-deploy:
-
-- provider: GitHub
-
-  description: Auto-generated Release
-
-  auth_token:
-
-    secure: GeYx4HYpDpN6dKUH00nJz0Yzbe9g98uB74ulCIMOCcsPighlNM5m/E5mGnCuLo+r
-
-  artifact: game_files
-
-  draft: true
-
-  prerelease: true
-
-  force_update: true
-
-  on:
-
-    CONFIGURATION: Release
-
-
-
+  name: Release
