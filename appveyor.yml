@@ -1,5 +1,7 @@
 
 version: v0.4.autorelease-{build}
+image:
+  - Visual Studio 2017
 
 branches:
 
