@@ -10,14 +10,14 @@ before_package:
 artifacts:
 - path: xml\Game
   name: game_files
-- path: README
+- path: README.md
   name: readme
 deploy:
 - provider: GitHub
   description: Auto-generated release
   auth_token:
     secure: EvCROCHCyi5Cm+1FwVbr1SIMpOV5bJdHMpixBlH6XmwyFd84y34dHiF9nsx7QohQ
-  #artifact: game_files
+  
   draft: true
   prerelease: false
   
