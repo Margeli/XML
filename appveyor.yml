@@ -6,10 +6,11 @@ configuration:
 build:
   verbosity: normal
 before_package:
-- ps: Copy-Item C:\projects\xml\$env:CONFIGURATION\Motor2D.exe C:\projects\XML\xml\Game\.
+- ps: Copy-Item C:\projects\xml\$env:CONFIGURATION\Motor2D.exe C:\projects\xml\Game\.
 artifacts:
 - path: Game
   name: game_files
+  type: WebDeployPackage
 deploy:
 - provider: GitHub
   description: Auto-generated release
