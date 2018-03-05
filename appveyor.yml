@@ -5,7 +5,8 @@ deploy:
   auth_token:
     secure: EvCROCHCyi5Cm+1FwVbr1SIMpOV5bJdHMpixBlH6XmwyFd84y34dHiF9nsx7QohQ
   draft: true
-  prerelease: falseversion: 1.0.{build}
+  prerelease: false
+version: 1.0.{build}
 configuration:
 - Debug
 - Release
