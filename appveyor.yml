@@ -10,7 +10,7 @@ before_package:
 artifacts:
 - path: xml\Game
   name: game_files
-  - path: README
+- path: README
   name: readme
 deploy:
 - provider: GitHub
