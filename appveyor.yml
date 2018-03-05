@@ -8,7 +8,7 @@ build:
 before_package:
 - ps: Copy-Item C:\projects\xml\$env:CONFIGURATION\Motor2D.exe C:\projects\xml\Game\.
 artifacts:
-- path: Game
+- path: Game\SDL2.dll
   name: game_files
 deploy:
 - provider: GitHub
