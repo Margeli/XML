@@ -25,9 +25,7 @@ build:
 
   verbosity: normal
 
-before_package:
 
-- ps: Copy-Item C:\projects\project2-zelda\$env:CONFIGURATION\2DEngine.exe C:\projects\project2-zelda\Game\.
 
 artifacts:
 
@@ -57,17 +55,5 @@ deploy:
 
     CONFIGURATION: Release
 
-notifications:
 
-- provider: Slack
 
-  incoming_webhook: https://hooks.slack.com/services/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
-
-  channel: catpad
-
-  on_build_success: true
-
-  on_build_failure: true
-
-  on_build_status_changed: true
-  
