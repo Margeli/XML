@@ -16,8 +16,6 @@ artifacts:
 deploy:
 - provider: GitHub
   description: Auto-generated release
-  auth_token:
-    secure: EvCROCHCyi5Cm+1FwVbr1SIMpOV5bJdHMpixBlH6XmwyFd84y34dHiF9nsx7QohQ
   
   draft: true
   prerelease: false
