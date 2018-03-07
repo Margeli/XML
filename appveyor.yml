@@ -17,7 +17,7 @@ deploy:
 - provider: GitHub
   description: Auto-generated release
   auth_token:
-    secure:1758bdf23bbfdd0ea04f215d094f49a41de2df33
+    secure: 1758bdf23bbfdd0ea04f215d094f49a41de2df33
   
   draft: true
   prerelease: false
